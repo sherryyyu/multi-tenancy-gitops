@@ -4,9 +4,9 @@ metadata:
   name: bootstrap
 spec:
   destination:
-    namespace: openshift-gitops
+    namespace: sy-gitops
     server: https://kubernetes.default.svc
-  project: default
+  project: sy-gitops
   source:
     path: 0-bootstrap/argocd/active
     repoURL: https://github.com/sherryyyu/multi-tenancy-gitops.git

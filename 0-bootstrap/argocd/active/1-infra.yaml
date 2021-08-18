@@ -31,7 +31,7 @@ spec:
     server: https://kubernetes.default.svc
   - namespace: openshift-cluster-node-tuning-operator
     server: https://kubernetes.default.svc
-  - namespace: openshift-gitops
+  - namespace: sy-gitops
     server: https://kubernetes.default.svc
   clusterResourceWhitelist:
   - group: ""
@@ -69,7 +69,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "100"
 spec:
   destination:
-    namespace: openshift-gitops
+    namespace: sy-gitops
     server: https://kubernetes.default.svc
   project: default
   source:
